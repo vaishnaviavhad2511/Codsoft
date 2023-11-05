@@ -11,7 +11,6 @@ def load_tasks():
 def save_tasks(tasks):
     with open('tasks.json', 'w') as file:
         json.dump(tasks, file, indent=4)
-
 def add_task(tasks):
     title = input("Enter task title: ")
     description = input("Enter task description: ")
